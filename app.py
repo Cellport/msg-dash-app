@@ -12,7 +12,6 @@ import pandas as pd
 
 import plotly.express as px
 from matplotlib import pyplot as plt
-import seaborn as sns
 
 
 import numpy as np
@@ -28,8 +27,6 @@ from dash.dependencies import Input, Output
 from datetime import datetime as dt
 from datetime import date
 from datetime import timedelta
-
-import calendar
 
 import warnings
 warnings.simplefilter("ignore")
