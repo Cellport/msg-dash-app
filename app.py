@@ -1,7 +1,6 @@
 # !/usr/bin/python
 # -*- coding: utf-8 -*-
 
-pip install matplotlib
 import base64
 import io
 
