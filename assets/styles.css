@@ -1,0 +1,14 @@
+.card-title {
+    margin-left: 20px;
+}
+
+.upload {
+	width: 300px;
+	height: 60px;
+	line-height: 60px;
+	border-width: 1px;
+	border-style: dashed;
+	border-radius: 5px;
+	margin: 10px;
+	text-align: center;
+}
