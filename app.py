@@ -166,7 +166,7 @@ def update_output(contents, filename):
             #BARS
             by_source = df.groupby(by='source')['id'].count().sort_values(ascending=True).reset_index()
             splot = px.bar(by_source, x='id', y='source', text='id')
-            splot.update_layout({'plot_bgcolor': 'rgba(0, 0, 0, 0)', 'paper_bgcolor': 'rgba(0, 0, 0, 0)'}, font=dict(size=18), margin=dict(l=50, r=50, t=50, b=50), bargap=0.2, bargroupgap=0.2)
+            splot.update_layout({'plot_bgcolor': 'rgba(0, 0, 0, 0)', 'paper_bgcolor': 'rgba(0, 0, 0, 0)'}, font=dict(size=18), margin=dict(l=50, r=50, t=50, b=50), yaxis=dict(margin=dict(r=10)), bargap=0.2, bargroupgap=0.2)
             splot.update_traces(textfont_size=25, textposition='auto')
             splot.update_xaxes(visible=True, showgrid=False, title='')
             splot.update_yaxes(visible=True, showgrid=False, title='')
