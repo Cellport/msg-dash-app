@@ -2,4 +2,8 @@ dash==2.6.0
 pandas
 matplotlib
 openpyxl
+dash_bootstrap_components
+dash.dependencies
+datetime 
+warnings
 gunicorn
