@@ -177,7 +177,7 @@ def update_output(contents, filename):
             
             by_category = df.groupby(by='category')['id'].count().sort_values(ascending=True).reset_index().tail()
             catplot = px.bar(by_category, x='id', y='category', text='id')
-            catplot.update_layout({'plot_bgcolor': 'rgba(0, 0, 0, 0)', 'paper_bgcolor': 'rgba(0, 0, 0, 0)'}, font=dict(size=18), margin=dict(l=50, r=50, t=50, b=50))
+            catplot.update_layout({'plot_bgcolor': 'rgba(0, 0, 0, 0)', 'paper_bgcolor': 'rgba(0, 0, 0, 0)'}, font=dict(size=18), margin=dict(l=50, r=50, t=50, b=50), bargap=0.2, bargroupgap=0.2)
             catplot.update_traces(textfont_size=25, textposition='auto')
             catplot.update_xaxes(visible=True, showgrid=False, title='')
             catplot.update_yaxes(visible=True, showgrid=False, title='')
@@ -192,7 +192,7 @@ def update_output(contents, filename):
                         y='stage',
                         x='id',
                         text='id')
-            stageplot.update_layout({'plot_bgcolor': 'rgba(0, 0, 0, 0)', 'paper_bgcolor': 'rgba(0, 0, 0, 0)'}, font=dict(size=18), margin=dict(l=50, r=50, t=50, b=50))
+            stageplot.update_layout({'plot_bgcolor': 'rgba(0, 0, 0, 0)', 'paper_bgcolor': 'rgba(0, 0, 0, 0)'}, font=dict(size=18), margin=dict(l=50, r=50, t=50, b=50), bargap=0.2, bargroupgap=0.2)
             stageplot.update_traces(textfont_size=25, textposition='auto')
             stageplot.update_xaxes(visible=True, showgrid=False, title='')
             stageplot.update_yaxes(visible=True, showgrid=False, title='')
